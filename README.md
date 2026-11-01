@@ -94,8 +94,8 @@ Re-enable the stock launcher and make it Home again (`com.google.android.tvlaunc
 
 ## Credits
 
-- Fonts: Inter and Space Mono (SIL Open Font License, `fonts/`).
-- Brand glyphs: [Simple Icons](https://simpleicons.org) (CC0, `LICENSE-SimpleIcons-CC0.md`); the brands are their
+- Fonts: Inter and Space Mono (SIL Open Font License, `licenses/`).
+- Brand glyphs: [Simple Icons](https://simpleicons.org) (CC0, `licenses/simple-icons-CC0.md`); the brands are their
   owners' trademarks.
 - Films and series: [TMDB](https://www.themoviedb.org). Weather: [Open-Meteo](https://open-meteo.com).
   Photos: [Lorem Picsum](https://picsum.photos) (Unsplash).
