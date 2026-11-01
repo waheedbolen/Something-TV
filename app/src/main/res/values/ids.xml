@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="image_url" type="id" />
+    <item name="card" type="id" />
+    <item name="lift" type="id" />
+    <item name="ring" type="id" />
+</resources>

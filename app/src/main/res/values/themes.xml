@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Explicitly opaque: on some firmware a default theme comes out translucent and the last app or
+         HDMI picture stays visible under Home. -->
+    <style name="Home" parent="android:Theme.Material.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSwipeToDismiss">false</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorAccent">@android:color/white</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:defaultFocusHighlightEnabled">false</item>
+    </style>
+
+</resources>

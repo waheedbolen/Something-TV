@@ -1,0 +1,14 @@
+# Build output
+build/
+.gradle/
+*.apk
+*.aab
+
+# Machine-specific and secret: never commit
+local.properties
+tmdb.properties
+
+# Editors
+.idea/
+*.iml
+.DS_Store

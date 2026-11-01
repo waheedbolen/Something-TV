@@ -1,0 +1,42 @@
+plugins {
+    id 'com.android.application'
+}
+
+// The TMDB key lives in ../tmdb.properties, outside the source.
+def tmdb = new Properties()
+def tmdbFile = rootProject.file('tmdb.properties')
+if (tmdbFile.exists()) tmdbFile.withInputStream { tmdb.load(it) }
+
+android {
+    namespace 'com.tvrefresh.home'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.tvrefresh.home'
+        // The TCL Percee TV runs Android TV 8.0 (API 26).
+        minSdk 26
+        targetSdk 34
+        versionCode 3
+        versionName '3.0'
+        buildConfigField 'String', 'TMDB_KEY', "\"${tmdb.getProperty('TMDB_KEY', '').trim()}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            // Sideloaded over ADB, never published.
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
