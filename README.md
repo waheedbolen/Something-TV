@@ -92,6 +92,10 @@ On the TCL X9026: 1% late frames at idle, about 26% while moving around (median 
 Re-enable the stock launcher and make it Home again (`com.google.android.tvlauncher`), then
 `pm uninstall com.tvrefresh.home`. With the cleanyourtv tools: `TV_HOST=<tv-ip> ../tv-vibehack/backup/restore.sh`.
 
+## Licence
+
+MIT, see [LICENSE](LICENSE). The fonts, brand glyphs and data sources below keep their own licences and terms.
+
 ## Credits
 
 - Fonts: Inter and Space Mono (SIL Open Font License, `licenses/`).
